@@ -5,10 +5,9 @@ Ansible role for bastille containers in Freebsd.
 ```
 $ cat bastille.yml
 ---
-# this playbook will install bastille pkg,
-# template, create some bastille container
-# and in that container it will install
-# some template
+# This role will install bastille pkg, template,
+# create some bastille containers.
+# Then in those containers it will install some templates.
 - hosts: localhost
   become: yes
   gather_facts: yes
