@@ -1,0 +1,17 @@
+---
+# vars file for ansible-role-bastille
+version: 12.1-RELEASE
+
+containers:
+  - { name: devel1, ip: 192.168.20.150/24 }
+  - { name: prod1, ip: 192.168.20.153/24 }
+  - { name: prod4, ip: 192.168.20.156/24 }
+
+templates:
+  - https://github.com/masumndc1/BasTilleTemplate
+
+apply_templates:
+  - "masumndc1/BasTilleTemplate/user"
+  - "masumndc1/BasTilleTemplate/ssh"
+  - "masumndc1/BasTilleTemplate/ansible"
+  - "masumndc1/BasTilleTemplate/pkgs"
