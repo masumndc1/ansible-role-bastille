@@ -4,8 +4,9 @@ version: 12.1-RELEASE
 
 containers:
   - { name: devel1, ip: 192.168.20.150/24 }
-  - { name: prod1, ip: 192.168.20.153/24 }
-  - { name: prod4, ip: 192.168.20.156/24 }
+  - { name: devel2, ip: 192.168.20.151/24 }
+  - { name: prod1, ip: 192.168.20.152/24 }
+  - { name: prod2, ip: 192.168.20.153/24 }
 
 templates:
   - https://github.com/masumndc1/BasTilleTemplate
